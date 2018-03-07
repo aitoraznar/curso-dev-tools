@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chrome Dev Tools</title>
+
+  <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="page-header">
+    <h1>Star Wars cast finder</h1>
+
+    <p class="lead"></p>
+  </div>
+
+  <div class="row">
+    <form id="reload-characters-button" class="form-inline">
+      <fieldset>
+        <legend>Characters</legend>
+
+        <ul id="cast" class="form-group">
+            <!-- Character list -->
+        </ul>
+
+
+        <button id="reload-characters-button">Reload characters</button>
+      </fieldset>
+    </form>
+
+    <form id="reload-characters-button" class="form-inline">
+      <fieldset>
+        <legend>Vehicles</legend>
+
+        <ul id="vehicles" class="form-group">
+            <!-- Vehicles list -->
+        </ul>
+
+
+        <button id="reload-vehicles-button">Reload vehicles</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <br/>
+
+  <fieldset>
+    <legend>Search</legend>
+
+      <form id="searchForm">
+          <label for="inputSearch">Finder:</label>
+          <input id="inputSearch" type="text">
+
+          <button id="searchButton">search</button>
+      </form>
+
+      <h2>Results</h2>
+      <table id="resultados" class="table table-condensed table-hover table-striped">
+        <colgroup>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Height</th>
+          <th>Gender</th>
+          <th>Films</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+  </fieldset>
+</div>
+
+<script src="/lib/jquery.min.js"></script>
+<script src="/src/api.js"></script>
+<script src="/src/mainController.js"></script>
+<script src="/src/characterController.js"></script>
+<script src="/src/vehicleController.js"></script>
+<script src="/src/pageModule.js"></script>
+
+<script id="resultTableRowTemplate" type="text/html">
+  <tr>
+    <td>{{name}}</td>
+    <td>{{height}}</td>
+    <td>{{gender}}</td>
+    <td>{{films}}</td>
+  </tr>
+</script>
+
+</body>
+</html>

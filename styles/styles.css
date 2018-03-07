@@ -1,0 +1,15 @@
+body {
+	/*background-image: url('../assets/images/Star-Wars-Wallpaper-003.jpg');*/
+	background: black;
+	color: white;
+}
+
+.row {
+	position: relative;
+}
+
+.form-inline {
+	width: 50%;
+	position: relative;
+	float: left;
+}
