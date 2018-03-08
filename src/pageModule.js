@@ -13,11 +13,15 @@ $(function () {
 	var reloadCharactersButton = document.getElementById('reload-characters-button');
 	reloadCharactersButton.onclick = function (e) {
 		if (e) e.preventDefault();
+
+		document.getElementById('cast').innerHTML = '';
 		characterController.reloadCharacters();
 	};
 	var reloadVehiclesButton = document.getElementById('reload-vehicles-button');
 	reloadVehiclesButton.onclick = function (e) {
 		if (e) e.preventDefault();
+
+		document.getElementById('vehicles').innerHTML = '';
 		vehicleController.reloadVehicles();
 	};
 
