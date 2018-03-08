@@ -1,4 +1,6 @@
-function MainController() {
+var MainController = (function() {
+    var api = Api();
+    
     var resultTableRowTemplate;
     var module = {
         search: search
@@ -17,7 +19,7 @@ function MainController() {
 
         var elementList = response.results.map(createResultRow);
 
-        $('tbody', container).append(elementList);
+        $('tbody', container).empty().append(elementList);
 
         return response;
     }
@@ -33,4 +35,4 @@ function MainController() {
     }
 
     return module;
-}
+});

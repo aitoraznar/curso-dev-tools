@@ -1,4 +1,4 @@
-var api = (function() {
+var Api = (function() {
 	var urls = {
 		characters: 'https://swapi.co/api/people',
 		starships: 'https://swapi.co/api/starships',
@@ -19,4 +19,4 @@ var api = (function() {
 	    return $.get(url);
 	  }
 	}
-})();
+});

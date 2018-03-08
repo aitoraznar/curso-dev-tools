@@ -1,7 +1,9 @@
-function VehicleController() {
+var VehicleController = (function() {
+    var api = Api();
+    
     var module = {
         loadVehicles: loadVehicles,
-        reloadVehicles: reloadVehicles,
+        reloadVehicles: loadVehicles,
         printVehicles: printVehicles
     };
 
@@ -10,19 +12,12 @@ function VehicleController() {
             .then(printVehicles);
     }
 
-    function reloadVehicles() {
-        var castContainer = document.getElementById('vehicles');
-        castContainer.innerHTML = '';
-
-        return loadVehicles();
-    }
-
     function printVehicles(response) {
         var castContainer = document.getElementById('vehicles');
 
         var elementList = response.results.map(createVehicleElement);
 
-        $(castContainer).append(elementList);
+        $(castContainer).empty().append(elementList);
 
         return response;
     }
@@ -43,4 +38,4 @@ function VehicleController() {
     }
 
     return module;
-}
+});

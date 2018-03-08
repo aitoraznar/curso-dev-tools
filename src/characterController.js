@@ -1,7 +1,9 @@
-function CharacterController() {
+var CharacterController = (function() {
+    var api = Api();
+    
     var module = {
         loadCharacters: loadCharacters,
-        reloadCharacters: reloadCharacters,
+        reloadCharacters: loadCharacters,
         printCharacters: printCharacters
     };
 
@@ -10,19 +12,12 @@ function CharacterController() {
             .then(printCharacters);
     }
 
-    function reloadCharacters() {
-        var castContainer = document.getElementById('cast');
-        castContainer.innerHTML = '';
-
-        return loadCharacters();
-    }
-
     function printCharacters(response) {
         var castContainer = document.getElementById('cast');
 
         var elementList = response.results.map(createCharacterElement);
 
-        $(castContainer).append(elementList);
+        $(castContainer).empty().append(elementList);
 
         return response;
     }
@@ -49,4 +44,4 @@ function CharacterController() {
     //console.timeEnd('printCharacters');
 
     return module;
-}
+});

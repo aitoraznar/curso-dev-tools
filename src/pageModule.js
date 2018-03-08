@@ -9,7 +9,7 @@ var vehicleController = VehicleController();
 var mainController = MainController();
 
 $(function () {
-	console.profile('a');
+	console.profile('page-load');
 	var reloadCharactersButton = document.getElementById('reload-characters-button');
 	reloadCharactersButton.onclick = function (e) {
 		if (e) e.preventDefault();
@@ -31,7 +31,11 @@ $(function () {
 
 	characterController.loadCharacters();
 	vehicleController.loadVehicles();
-	console.profileEnd('a');
+
+	setTimeout(function() {
+		console.profileEnd('page-load');
+	}, 500);
+	
 });
 
 
