@@ -5,7 +5,7 @@
 
 body {
 	/*background-image: url('../assets/images/Star-Wars-Wallpaper-003.jpg');*/
-	background: black;
+	background: #121212;
 	color: yellow;
 }
 
@@ -22,7 +22,7 @@ h1 {
 .star-wars-font {
 	font-family: 'StarWarsJedi', 'Liberation Serif';
 	text-shadow: 1px 0px yellow, 0 1px yellow, 0 1px yellow, 0 -1px yellow;
-	color: black;
+	color: #121212;
 }
 
 .text-center {
