@@ -9,8 +9,8 @@
 
 ## Documentation
 
-[Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
-[Console API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)
+* [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+* [Console API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)
 
 ## Updates
 * https://developers.google.com/web/updates/
@@ -19,3 +19,7 @@
 
 * python -m SimpleHTTPServer 8000
 * python3 -m http.server 8000
+
+## Other
+* [Star Wars API](https://swapi.co/)
+* [Font](https://www.dafont.com/es/star-jedi.font)

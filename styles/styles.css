@@ -1,7 +1,32 @@
+@font-face {
+    font-family: StarWarsJedi;
+    src: url('./fonts/starjedi/Starjedi.ttf');
+}
+
 body {
 	/*background-image: url('../assets/images/Star-Wars-Wallpaper-003.jpg');*/
 	background: black;
-	color: white;
+	color: yellow;
+}
+
+h1 {	
+	font-size: 6em;
+}
+
+.lead {
+	font-size: 3em;
+	top: -1.5em;
+	position: relative;
+}
+
+.star-wars-font {
+	font-family: 'StarWarsJedi', 'Liberation Serif';
+	text-shadow: 1px 0px yellow, 0 1px yellow, 0 1px yellow, 0 -1px yellow;
+	color: black;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .row {

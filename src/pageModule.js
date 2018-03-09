@@ -37,7 +37,7 @@ $(function () {
 	vehicleController.loadVehicles();
 
 	setTimeout(function() {
-		console.profileEnd('page-load');
+		console.profileEnd();
 	}, 500);
 	
 });
