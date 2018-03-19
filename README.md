@@ -11,6 +11,7 @@
 
 * [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
 * [Console API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)
+* [Twitter account](https://twitter.com/ChromeDevTools)
 
 ## Updates
 * https://developers.google.com/web/updates/
