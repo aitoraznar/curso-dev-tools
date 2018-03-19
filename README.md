@@ -24,3 +24,9 @@
 ## Other
 * [Star Wars API](https://swapi.co/)
 * [Font](https://www.dafont.com/es/star-jedi.font)
+
+## Useful commands
+* `Ctrl+Shift+P` or `Cmd+Shift+P`: Open console
+* `$0`: References selected Element
+* `$_`: References last used Element in console
+* `getEventListeners($0)`: get the event listeners for an Element
